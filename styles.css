@@ -10,6 +10,7 @@
 /* Global Styles */
 .page-wrapper {
     max-width: 1200px;
+    border: 1px solid var(--shadow-grey);
     margin: 0 auto;
 }
 
@@ -157,6 +158,10 @@ body {
 }
 
 /* Learn Section */
+.learn-title {
+    padding: 0 0.7em;
+}
+
 .learn-section {
     padding: 0 1em;
     font-family: Georgia, "Times New Roman", serif;
@@ -167,6 +172,8 @@ body {
     border-radius: 15px;
     padding: 1em;
     margin-bottom: 1.5em;
+    text-decoration: none;
+    color: inherit;
 }
 
 .learn-card:hover {
@@ -212,6 +219,7 @@ body {
 
 .feedback-btn:hover {
     background: var(--ocean-blue);
+    transform: scale(1.04);
 }
 
 /* Video Section */
