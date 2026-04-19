@@ -1,4 +1,4 @@
-# vtran32.github.io
+# vivixntrxn.github.io
 This repository contains files for CIS300 Project Assignments.
 
 Pickleball Hub is a beginner friendly website designed to introduce new players to the sport of pickleball.
