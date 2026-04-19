@@ -1,7 +1,6 @@
 # vtran32.github.io
 This repository contains files for CIS300 Project Assignments.
 
-# Pickleball Hub
 Pickleball Hub is a beginner friendly website designed to introduce new players to the sport of pickleball.
 It covers gameplay basics, equipment, places to play, and a feedback form for user suggestions.
 
@@ -20,7 +19,7 @@ This project was built using **HTML, CSS, and JavaScript**, with a focus on resp
 - Mobile/Tablet hamburger menu with open/close behavior.
 - Automatic highlighting of the current page.
 
-### "What You'll Learn Section
+### "What You'll Learn" Section
 - 4 interactive cards:
   - **Gameplay Fundamentals**
   - **Equipment**
