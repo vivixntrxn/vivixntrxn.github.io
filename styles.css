@@ -248,6 +248,67 @@ body {
     line-height: 1.5;
 }
 
+/* Footer */
+.footer {
+    background-color: var(--shadow-grey);
+    color: var(--porcelain);
+    padding: 1em;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+}
+
+.feedback-pages {
+    display: none !important;
+}
+
+.footer-pages, .footer-extra {
+    margin-bottom: 2em;
+}
+
+.footer-pages h3, .footer-extra h3 {
+    margin-top: 0;
+    color: var(--emerald);
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.footer-pages a, .footer-extra a {
+    display: block;
+    color: var(--porcelain);
+    text-decoration: none;
+    margin: 0.5em 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+.footer-pages a:visited, .footer-extra a:visited {
+    color: var(--ocean-blue);
+}
+
+.footer-pages a:hover, .footer-extra a:hover {
+    color: var(--emerald);
+}
+
+.footer-contact {
+    margin-top: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+.footer-contact span {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.1em;
+    font-size: 0.9em;
+}
+
 /* Tablet */
 @media (min-width: 600px) {
     /* Learn Section */
@@ -335,5 +396,53 @@ body {
 
     .video-description {
         margin-top: -10px;
+    }
+
+    /* Footer */
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5em;
+    }
+
+    .feedback-pages {
+        display: block !important;
+    }
+
+    .feedback-extra {
+        display: none !important;
+    }
+
+    .footer-pages {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .footer-pages h3, .footer-extra h3 {
+        display: none;
+    }
+
+    .footer-pages a {
+        position: relative;
+        padding-right: 0.75em;
+        margin-right: 0.75em;
+    }
+
+    .footer-pages a:not(:last-child)::after {
+        content: "|";
+        position: absolute;
+        right: -0.7em;
+        color: var(--porcelain);
+    }
+
+    .footer-contact {
+        margin-top: -2em;
+    }
+
+    .footer-copy {
+        margin-top: -1em;
     }
 }
