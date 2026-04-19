@@ -2,7 +2,7 @@
 :root {
   --shadow-grey: #1B1725;
   --porcelain: #FDFFFC;
-  --emerald: #4CB963;
+  --emerald: 	#64E079;
   --ocean-blue: #2E83B0;
   --green: #157F1F;
 }
@@ -31,10 +31,16 @@ body {
     font-size: 1.1em;
 }
 
-.header-content {
+.left-group {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -42,4 +48,92 @@ body {
     height: 6em;
     border: 3px solid var(--porcelain);
     border-radius: 10px;
+}
+
+/* Navigation */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    margin-top: -5px;
+    margin-right: -15px;
+}
+
+.menu-toggle:active {
+    opacity: 0.5;
+}
+
+.menu-label {
+    color: var(--porcelain);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.1em;
+}
+
+.menu-toggle img {
+    width: 6em;
+    height: 6em;
+}
+
+.nav-links {
+    display: none;
+    position: absolute;
+    right: 1.6em;
+    top: 5.5em;
+    background-color: var(--shadow-grey);
+    padding: 10px;
+    flex-direction: column;
+    border: 3px solid var(--porcelain);
+}
+
+.nav-links.open {
+    display: flex;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px;
+    color: var(--porcelain);
+    text-decoration: none;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.nav-links a.active {
+    color: var(--emerald);
+}
+
+.nav-links a:hover {
+    background-color: var(--ocean-blue);
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+    /* Navigation */
+    .menu-toggle {
+        display: none;
+    }
+    
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        gap: 25px;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    .nav-links a {
+        padding: 0;
+        font-size: 1.1em;
+    }
+
+    .nav-links a:hover {
+        background: none;
+        color: var(--ocean-blue);
+    }
 }
