@@ -79,7 +79,7 @@ body {
     display: none;
     position: absolute;
     right: 1.6em;
-    top: 5.5em;
+    top: 7em;
     background-color: var(--shadow-grey);
     padding: 10px;
     flex-direction: column;
@@ -110,14 +110,48 @@ body {
     background-color: var(--ocean-blue);
 }
 
+/* Stats */
+.hero {
+    background-color: lightgrey;
+    padding: 1em;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.hero h2 {
+    font-size: 1.4em;
+    margin-top: 0;
+}
+
+.stats {
+    display: flex;
+    gap: 3.2em;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat .number {
+    font-size: 1.4em;
+    color: var(--green);
+    font-weight: bold;
+}
+
+.stat .label {
+    display: block;
+    color: var(--shadow-grey);
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 /* Desktop */
 @media (min-width: 1024px) {
-
     /* Navigation */
     .menu-toggle {
         display: none;
     }
-    
+
     .nav-links {
         display: flex !important;
         flex-direction: row;
@@ -130,6 +164,7 @@ body {
     .nav-links a {
         padding: 0;
         font-size: 1.1em;
+        margin-top: -23px;
     }
 
     .nav-links a:hover {
