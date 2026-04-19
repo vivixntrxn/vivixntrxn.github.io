@@ -48,7 +48,7 @@ This project was built using **HTML, CSS, and JavaScript**, with a focus on resp
 
 ## Technologies Used
 - **HTML5**
-- *CSS3**
+- **CSS3**
   - Flexbox
   - Grid
   - Media queries
