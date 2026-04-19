@@ -7,6 +7,12 @@
   --green: #157F1F;
 }
 
+/* Global Styles */
+.page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 /* Body */
 body {
     background-color: var(--porcelain)
@@ -110,7 +116,7 @@ body {
     background-color: var(--ocean-blue);
 }
 
-/* Stats */
+/* Hero Section */
 .hero {
     background-color: lightgrey;
     padding: 1em;
@@ -144,6 +150,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.hero-image img {
+    width: 100%;
+    max-width: none;
+    display: block;
+}
 
 /* Desktop */
 @media (min-width: 1024px) {
@@ -152,8 +163,15 @@ body {
         display: none;
     }
 
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px; 
+    }
+
     .nav-links {
         display: flex !important;
+        position: static;
         flex-direction: row;
         gap: 25px;
         padding: 0;
@@ -164,11 +182,20 @@ body {
     .nav-links a {
         padding: 0;
         font-size: 1.1em;
-        margin-top: -23px;
+        margin-top: -2em;
     }
 
     .nav-links a:hover {
         background: none;
         color: var(--ocean-blue);
+    }
+
+    .hero-wrapper {
+        display: flex;
+    }
+
+    .hero {
+        width: 80vw; 
+        padding: 2em;
     }
 }
