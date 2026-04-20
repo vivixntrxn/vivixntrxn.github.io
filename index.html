@@ -173,13 +173,15 @@
 
     // Highlight current page link
     let currentPage = window.location.pathname.split('/').pop();
+
     if (currentPage === "" || currentPage === "/") {
         currentPage = "index.html";
     }
 
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-            link.classList.add('active');
+    const navItems = document.querySelectorAll('.nav-links li a');
+    navItems.forEach(item => {
+        if (item.getAttribute('href') === currentPage) {
+            item.classList.add('active');
         }
     });
 </script>
