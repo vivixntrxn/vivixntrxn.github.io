@@ -172,11 +172,14 @@
     });
 
     // Highlight current page link
-    const currentPage = window.location.pathname.split('/').pop();
-    const navItems = document.querySelectorAll('.nav-links li a');
-    navItems.forEach(item => {
-        if (item.getAttribute('href') === currentPage) {
-            item.classList.add('active');
+    let currentPage = window.location.pathname.split('/').pop();
+    if (currentPage === "") {
+        currentPage = "index.html";
+    }
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
         }
     });
 </script>
