@@ -165,6 +165,9 @@ body {
 .learn-section {
     padding: 0 1em;
     font-family: Georgia, "Times New Roman", serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0 1.5;
 }
 
 .learn-card {
