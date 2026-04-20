@@ -292,12 +292,8 @@ body {
     font-size: 0.9em;
 }
 
-.footer-pages a:visited, .footer-extra a:visited {
-    color: var(--ocean-blue);
-}
-
 .footer-pages a:hover, .footer-extra a:hover {
-    color: var(--emerald);
+    color: var(--ocean-blue);
 }
 
 .footer-contact {
