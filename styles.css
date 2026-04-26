@@ -515,6 +515,22 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 0 1.5em;
     }
+
+    /* Rules Section */
+    .rules-photo img {
+        max-width: 400px;
+    }
+
+    .section-divider {
+        width: 90%;
+        margin: 2em auto 1.5em;
+    }
+
+    /* Common Terminology Section */
+    .term-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Desktop */
@@ -573,6 +589,34 @@ body {
 
     .form-card {
         grid-column: 1 / -1;
+    }
+    
+    /* Rules Section */
+    .rules-layout {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .rules-photo {
+        order: 2;
+        flex: 0 0 40%;
+        padding-right: 1em;
+    }
+
+    .rules-photo img {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .section-divider {
+        width: 95%;
+        margin: 2em auto 1.5em;
+    }
+
+    /* Common Terminology Section */
+    .term-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
     }
 
     /* Video Section */
