@@ -605,6 +605,19 @@ input[type="submit"]:hover {
     background-color: var(--ocean-blue);
 }
 
+#form-message {
+    margin-top: 1em;
+    padding: 0.8em;
+    background-color: var(--emerald);
+    border: 1px solid var(--green);
+    color: var(--shadow-grey);
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
 /* Footer */
 .footer {
     background-color: var(--shadow-grey);

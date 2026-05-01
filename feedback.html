@@ -52,7 +52,7 @@
         </section>
 
         <!-- Feedback Form -->
-        <form method="post" action="#">
+        <form id="feedback-form">
             <label for="firstName">*First Name:</label>
             <input type="text" id="firstName" name="firstName" required>
 
@@ -87,6 +87,8 @@
 
             <input type="submit" value="Submit">
         </form>
+
+        <div id="form-message" class="hidden"></div>
 
         <!-- Footer -->
         <footer class="footer">
@@ -140,4 +142,24 @@
             }
         });
     </script>
+
+    <!-- Javascript for Submit Feedback -->
+    <script>
+        const form = document.getElementById('feedback-form');
+        const messageBox = document.getElementById('form-message');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            form.reset();
+
+            messageBox.textContent = "Form submitted! We will be contacting you soon.";
+            messageBox.classList.remove('hidden');
+
+            setTimeout(() => {
+                messageBox.classList.add('hidden');
+            }, 3000);
+        });
+    </script>
+
 </body>
