@@ -704,8 +704,12 @@ input[type="submit"]:hover {
 
     /* Navigation */
     .menu-toggle {
-        margin-top: 5px;
+        margin-top: 15px;
         margin-right: -5px;
+    }
+
+    .menu-toggle:hover {
+        opacity: 1;
     }
 
     .stats {
