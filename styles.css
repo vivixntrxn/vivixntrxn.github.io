@@ -163,7 +163,7 @@ body {
     padding-right: 0.8em;
 }
 
-.fundamentals-hero .stat .label {
+.fundamentals-hero .stat .label, .description {
     color: var(--green);
     font-size: 1em;
     text-decoration: none;
@@ -508,6 +508,43 @@ body {
     display: none;
 }
 
+/* Recommendation Section */
+.recommendation-paddles, .recommendation-balls {
+    padding: 0 1em;
+}
+.recommendation-link-card {
+    margin: 1em;
+}
+
+.paddle-title, .balls-title {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 0.6em;
+}
+
+/* Locations Section*/
+.location {
+    padding: 0 1em;
+}
+
+.location-card {
+    border: 1px solid var(--shadow-grey);
+    padding: 1em 1em 0 1em;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.location-card h4 {
+    color: var(--green);
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.location-card p {
+    font-size: 0.9em;
+}
+
 /* Video Section */
 .watch-section {
     background-color: lightgrey;
@@ -540,20 +577,6 @@ body {
     color: var(--shadow-grey);
     margin-top: 1em;
     line-height: 1.5;
-}
-
-/* Recommendation Section */
-.recommendation-paddles, .recommendation-balls {
-    padding: 0 1em;
-}
-.recommendation-link-card {
-    margin: 1em;
-}
-
-.paddle-title, .balls-title {
-    font-size: 1.2em;
-    font-weight: 700;
-    margin-bottom: 0.6em;
 }
 
 /* Footer */
