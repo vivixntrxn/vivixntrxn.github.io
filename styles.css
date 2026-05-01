@@ -88,7 +88,7 @@ body {
 
 .menu-toggle img {
     width: 6em;
-    height: 6emm;
+    height: 6em;
 }
 
 .nav-links {
@@ -268,7 +268,7 @@ body {
 
 /* Video Section */
 .watch-section {
-    background-color: lightgrey;
+    background-color: #f0f0f0;
     padding: 1em;
 }
 
@@ -317,6 +317,7 @@ body {
 
 .rules-photo img {
     width: 70%;
+    height: 70%;
 }
 
 .rules-text {
@@ -331,6 +332,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.95em;
     color: var(--shadow-grey)
+}
+
+.sub-faults {
+    margin-left: -0.5em;
 }
 
 .sub-faults li {
@@ -687,13 +692,13 @@ input[type="submit"]:hover {
 }
 
 /* Mobile */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     /* Header */
     .header h1 { 
         font-size: 1.3em; 
     }
 
-    .tagline { 
+    .tagline, .stat .number { 
         font-size: 0.9em;
     }
 
@@ -704,7 +709,6 @@ input[type="submit"]:hover {
 
     /* Navigation */
     .menu-toggle {
-        margin-top: 15px;
         margin-right: -5px;
     }
 
@@ -716,17 +720,22 @@ input[type="submit"]:hover {
         gap: 2.5em;
     }
 
+    .nav-links {
+        top: 6em;
+    }
+
     /* Hero Section */
     .hero h2 {
         font-size: 1em;
     }
 
-    .stat .number {
-        font-size: 0.9em;
+    .stat .label, .fundamentals-hero .stat .label, .description, .score-label, .score-callout  {
+        font-size: 0.8em;
     }
 
-    .stat .label {
-        font-size: 0.7em;
+    /* Scoring Section */
+    .score-number {
+        font-size: 1.5em;
     }
 }
 
