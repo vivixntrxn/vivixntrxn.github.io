@@ -41,7 +41,7 @@
         </header>
 
         <!-- Hero Section -->
-        <section class="places-section">
+        <section class="information-section">
             <div class="hero">
                 <h2>Places to Play</h2>
                 <p class="description">
@@ -78,8 +78,8 @@
                 <button class="filter-btn">Filter by Type ▾</button>
                 <div class="filter-menu">
                     <label><input type="checkbox" class="filter-type" value="free"> FREE Courts</label>
-                    <label><input type="checkbox" class="filter-type" value="indoor"> Indoor Courts</label>
                     <label><input type="checkbox" class="filter-type" value="outdoor"> Outdoor Courts</label>
+                    <label><input type="checkbox" class="filter-type" value="indoor"> Indoor Courts</label>
                 </div>
             </div>
 
@@ -89,10 +89,6 @@
         <!-- Apache Junction -->
         <section class="location has-outdoor" data-city="Apache Junction">
             <h2>Apache Junction</h2>
-
-            <div class="indoor">
-                <h3>Indoor Courts</h3>
-            </div>
             
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
@@ -103,15 +99,15 @@
                     <p>3015 N Idaho Rd</p>
                 </div>
             </div>
+
+            <div class="indoor">
+                <h3>Indoor Courts</h3>
+            </div>
         </section>
 
         <!-- Avondale -->
         <section class="location has-outdoor" data-city="Avondale">
             <h2>Avondale</h2>
-
-            <div class="indoor">
-                <h3>Indoor Courts</h3>
-            </div>
             
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
@@ -134,20 +130,15 @@
                     <p>12325 W McDowell Rd</p>
                 </div>
             </div>
+
+            <div class="indoor">
+                <h3>Indoor Courts</h3>
+            </div>
         </section>
 
         <!-- Chandler -->
         <section class="location has-indoor has-outdoor" data-city="Chandler">
             <h2>Chandler</h2>
-
-            <div class="indoor">
-                <h3>Indoor Courts</h3>
-                <div class="location-card">
-                    <h4>Pickleball Kingdom</h4>
-                    <p>15 Courts</p>
-                    <p>4650 W Ray Rd</p>
-                </div>
-            </div>
             
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
@@ -170,15 +161,20 @@
                     <p>2041 S Pioneer Pkwy</p>
                 </div>
             </div>
+
+            <div class="indoor">
+                <h3>Indoor Courts</h3>
+                <div class="location-card">
+                    <h4>Pickleball Kingdom</h4>
+                    <p>15 Courts</p>
+                    <p>4650 W Ray Rd</p>
+                </div>
+            </div>
         </section>
 
         <!-- Fountain Hills -->
         <section class="location has-outdoor" data-city="Fountain Hills">
             <h2>Fountain Hills</h2>
-
-            <div class="indoor">
-                <h3>Indoor Courts</h3>
-            </div>
             
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
@@ -207,11 +203,25 @@
                     <p>14789 N Del Cambre Ave</p>
                 </div>
             </div>
+
+            <div class="indoor">
+                <h3>Indoor Courts</h3>
+            </div>
         </section>
 
         <!-- Gilbert -->
         <section class="location has-indoor has-outdoor" data-city="Gilbert">
             <h2>Gilbert</h2>
+            
+            <div class="outdoor">
+                <h3>Outdoor Courts</h3>
+
+                <div class="location-card free">
+                    <h4>Gilbert Regional Park</h4>
+                    <p>16 Courts · FREE</p>
+                    <p>3005 E Queen Creek Rd</p>
+                </div>
+            </div>
 
             <div class="indoor">
                 <h3>Indoor Courts</h3>
@@ -240,43 +250,11 @@
                     <p>4588 S Highley Rd</p>
                 </div>
             </div>
-            
-            <div class="outdoor">
-                <h3>Outdoor Courts</h3>
-
-                <div class="location-card free">
-                    <h4>Gilbert Regional Park</h4>
-                    <p>16 Courts · FREE</p>
-                    <p>3005 E Queen Creek Rd</p>
-                </div>
-            </div>
         </section>
 
         <!-- Glendale -->
         <section class="location has-indoor has-outdoor" data-city="Glendale">
             <h2>Glendale</h2>
-
-            <div class="indoor">
-                <h3>Indoor Courts</h3>
-
-                <div class="location-card">
-                    <h4>Center Court Pickleball Club</h4>
-                    <p>16 Courts</p>
-                    <p>5960 W Bell Rd</p>
-                </div>
-
-                <div class="location-card">
-                    <h4>Chicken N Pickle</h4>
-                    <p>6 Courts</p>
-                    <p>9330 W Hanna Ln</p>
-                </div>
-
-                <div class="location-card">
-                    <h4>The Pickleball Space</h4>
-                    <p>10 Courts</p>
-                    <p>5665 W Bell Rd</p>
-                </div>
-            </div>
             
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
@@ -305,21 +283,33 @@
                     <p>7241 W Union Hills Dr</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Goodyear -->
-        <section class="location has-indoor has-outdoor" data-city="Goodyear">
-            <h2>Goodyear</h2>
 
             <div class="indoor">
                 <h3>Indoor Courts</h3>
 
                 <div class="location-card">
-                    <h4>Life Time Palm Valley</h4>
-                    <p>3 Courts</p>
-                    <p>14540 W McDowell Rd</p>
+                    <h4>Center Court Pickleball Club</h4>
+                    <p>16 Courts</p>
+                    <p>5960 W Bell Rd</p>
+                </div>
+
+                <div class="location-card">
+                    <h4>Chicken N Pickle</h4>
+                    <p>6 Courts</p>
+                    <p>9330 W Hanna Ln</p>
+                </div>
+
+                <div class="location-card">
+                    <h4>The Pickleball Space</h4>
+                    <p>10 Courts</p>
+                    <p>5665 W Bell Rd</p>
                 </div>
             </div>
+        </section>
+
+        <!-- Goodyear -->
+        <section class="location has-indoor has-outdoor" data-city="Goodyear">
+            <h2>Goodyear</h2>
             
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
@@ -336,33 +326,21 @@
                     <p>420 S Estrella Pkwy</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Mesa -->
-        <section class="location has-indoor has-outdoor" data-city="Mesa">
-            <h2>Mesa</h2>
 
             <div class="indoor">
                 <h3>Indoor Courts</h3>
 
                 <div class="location-card">
-                    <h4>Dink and Dine</h4>
-                    <p>10 Courts</p>
-                    <p>1017 N Dobson Rd</p>
-                </div>
-
-                <div class="location-card">
-                    <h4>The Pickle Guild</h4>
-                    <p>9 Courts</p>
-                    <p>1135 N Recker Rd</p>
-                </div>
-
-                <div class="location-card">
-                    <h4>The Picklr Mesa</h4>
-                    <p>9 Courts</p>
-                    <p>1135 N Recker Rd</p>
+                    <h4>Life Time Palm Valley</h4>
+                    <p>3 Courts</p>
+                    <p>14540 W McDowell Rd</p>
                 </div>
             </div>
+        </section>
+
+        <!-- Mesa -->
+        <section class="location has-indoor has-outdoor" data-city="Mesa">
+            <h2>Mesa</h2>
             
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
@@ -415,33 +393,33 @@
                     <p>10531 E Rubidium Ave</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Peoria -->
-        <section class="location has-indoor has-outdoor" data-city="Peoria">
-            <h2>Peoria</h2>
 
             <div class="indoor">
                 <h3>Indoor Courts</h3>
 
                 <div class="location-card">
-                    <h4>Life Time Happy Valley - Peoria</h4>
-                    <p>3 Courts</p>
-                    <p>24700 N 67th Ave</p>
+                    <h4>Dink and Dine</h4>
+                    <p>10 Courts</p>
+                    <p>1017 N Dobson Rd</p>
                 </div>
 
                 <div class="location-card">
-                    <h4>The Pickle Dojo</h4>
-                    <p>4 Courts</p>
-                    <p>9848 W Peoria Ave</p>
+                    <h4>The Pickle Guild</h4>
+                    <p>9 Courts</p>
+                    <p>1135 N Recker Rd</p>
                 </div>
 
                 <div class="location-card">
-                    <h4>The Picklr Peoria</h4>
-                    <p>8 Courts</p>
-                    <p>7586 W Thunderbird Rd</p>
+                    <h4>The Picklr Mesa</h4>
+                    <p>9 Courts</p>
+                    <p>1135 N Recker Rd</p>
                 </div>
             </div>
+        </section>
+
+        <!-- Peoria -->
+        <section class="location has-indoor has-outdoor" data-city="Peoria">
+            <h2>Peoria</h2>
             
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
@@ -476,27 +454,33 @@
                     <p>12859 N 83rd Ln</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Phoenix -->
-        <section class="location has-indoor has-outdoor" data-city="Phoenix">
-            <h2>Phoenix</h2>
 
             <div class="indoor">
                 <h3>Indoor Courts</h3>
 
                 <div class="location-card">
-                    <h4>Center Court Pickleball Club</h4>
-                    <p>12 Courts</p>
-                    <p>7000 E Mayo Blvd</p>
+                    <h4>Life Time Happy Valley - Peoria</h4>
+                    <p>3 Courts</p>
+                    <p>24700 N 67th Ave</p>
                 </div>
 
                 <div class="location-card">
-                    <h4>Life Time North Scottsdale</h4>
-                    <p>3 Courts</p>
-                    <p>6850 E Chauncey Ln</p>
+                    <h4>The Pickle Dojo</h4>
+                    <p>4 Courts</p>
+                    <p>9848 W Peoria Ave</p>
+                </div>
+
+                <div class="location-card">
+                    <h4>The Picklr Peoria</h4>
+                    <p>8 Courts</p>
+                    <p>7586 W Thunderbird Rd</p>
                 </div>
             </div>
+        </section>
+
+        <!-- Phoenix -->
+        <section class="location has-indoor has-outdoor" data-city="Phoenix">
+            <h2>Phoenix</h2>
             
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
@@ -579,15 +563,27 @@
                     <p>4425 E Western Star Blvd</p>
                 </div>
             </div>
+
+            <div class="indoor">
+                <h3>Indoor Courts</h3>
+
+                <div class="location-card">
+                    <h4>Center Court Pickleball Club</h4>
+                    <p>12 Courts</p>
+                    <p>7000 E Mayo Blvd</p>
+                </div>
+
+                <div class="location-card">
+                    <h4>Life Time North Scottsdale</h4>
+                    <p>3 Courts</p>
+                    <p>6850 E Chauncey Ln</p>
+                </div>
+            </div>
         </section>
 
         <!-- Queen Creek -->
         <section class="location has-outdoor" data-city="Queen Creek">
             <h2>Queen Creek</h2>
-
-            <div class="indoor">
-                <h3>Indoor Courts</h3>
-            </div>
             
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
@@ -604,33 +600,15 @@
                     <p>19535 E Appleby Rd</p>
                 </div>
             </div>
+
+            <div class="indoor">
+                <h3>Indoor Courts</h3>
+            </div>
         </section>
 
         <!-- Scottsdale -->
         <section class="location has-indoor has-outdoor" data-city="Scottsdale">
             <h2>Scottsdale</h2>
-
-            <div class="indoor">
-                <h3>Indoor Courts</h3>
-
-                <div class="location-card">
-                    <h4>The Orchard Indoor Pickleball</h4>
-                    <p>2 Courts</p>
-                    <p>9035 E Pima Center Pkwy</p>
-                </div>
-
-                <div class="location-card">
-                    <h4>The Picklr Scottsdale</h4>
-                    <p>12 Courts</p>
-                    <p>9190 E Talking Stick Way</p>
-                </div>
-
-                <div class="location-card">
-                    <h4>Valley of the Sun Jewish Community Center</h4>
-                    <p>2 Courts</p>
-                    <p>12701 N Scottsdale Rd</p>
-                </div>
-            </div>
             
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
@@ -707,15 +685,33 @@
                     <p>12701 N Scottsdale Rd</p>
                 </div>
             </div>
+
+            <div class="indoor">
+                <h3>Indoor Courts</h3>
+
+                <div class="location-card">
+                    <h4>The Orchard Indoor Pickleball</h4>
+                    <p>2 Courts</p>
+                    <p>9035 E Pima Center Pkwy</p>
+                </div>
+
+                <div class="location-card">
+                    <h4>The Picklr Scottsdale</h4>
+                    <p>12 Courts</p>
+                    <p>9190 E Talking Stick Way</p>
+                </div>
+
+                <div class="location-card">
+                    <h4>Valley of the Sun Jewish Community Center</h4>
+                    <p>2 Courts</p>
+                    <p>12701 N Scottsdale Rd</p>
+                </div>
+            </div>
         </section>
 
         <!-- Surprise -->
         <section class="location has-outdoor" data-city="Surprise">
             <h2>Surprise</h2>
-
-            <div class="indoor">
-                <h3>Indoor Courts</h3>
-            </div>
             
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
@@ -732,21 +728,15 @@
                     <p>15930 N Bullard Ave</p>
                 </div>
             </div>
+
+            <div class="indoor">
+                <h3>Indoor Courts</h3>
+            </div>
         </section>
 
         <!-- Tempe -->
         <section class="location has-indoor has-outdoor" data-city="Tempe">
             <h2>Tempe</h2>
-
-            <div class="indoor">
-                <h3>Indoor Courts</h3>
-
-                <div class="location-card">
-                    <h4>The Picklr Tempe</h4>
-                    <p>8 Courts</p>
-                    <p>1315 W Elliot Rd</p>
-                </div>
-            </div>
             
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
@@ -769,15 +759,21 @@
                     <p>8401 S Hardy Dr</p>
                 </div>
             </div>
+
+            <div class="indoor">
+                <h3>Indoor Courts</h3>
+
+                <div class="location-card">
+                    <h4>The Picklr Tempe</h4>
+                    <p>8 Courts</p>
+                    <p>1315 W Elliot Rd</p>
+                </div>
+            </div>
         </section>
 
         <!-- Wickenburg -->
         <section class="location has-outdoor" data-city="Wickenburg">
             <h2>Wickenburg</h2>
-
-            <div class="indoor">
-                <h3>Indoor Courts</h3>
-            </div>
             
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
@@ -787,6 +783,10 @@
                     <p>10 Courts · FREE</p>
                     <p>3020 W Wickenburg Way</p>
                 </div>
+            </div>
+
+            <div class="indoor">
+                <h3>Indoor Courts</h3>
             </div>
         </section>
 

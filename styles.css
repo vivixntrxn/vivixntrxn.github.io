@@ -129,7 +129,7 @@ body {
 /* Hero Section */
 .hero {
     background-color: #f0f0f0;
-    padding: 1em;
+    padding: 2em;
     font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -192,6 +192,10 @@ body {
     width: 100%;
     max-width: none;
     display: block;
+}
+
+.information-section p {
+    margin-bottom: -1em;
 }
 
 /* Learn Section */
@@ -880,21 +884,17 @@ input[type="submit"]:hover {
         color: var(--ocean-blue);
     }
 
-    .hero-wrapper, .places-section {
+    /* Hero Section */
+    .hero-wrapper, .information-section {
         display: flex;
     }
 
     .hero {
         width: 100%; 
-        padding: 2em;
     }
 
-    .fundamentals-hero .hero, .places-section .hero {
+    .fundamentals-hero .hero, .information-section .hero {
         padding-left: 1em;
-    }
-
-    .places-section p {
-        margin-bottom: -1em;
     }
 
     /* Learn Section */
@@ -980,6 +980,27 @@ input[type="submit"]:hover {
     .recommendations-section > h2 {
         grid-column: 1 / -1;
         margin-top: 0.2em;
+    }
+
+    /* Locations Section */
+    .location {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .location .indoor, .location .outdoor {
+        width: 50%;
+        float: left;
+    }
+    
+    .location .indoor h3, .location .outdoor h3 {
+        margin-top: 0;
+    }
+    
+    .location::after {
+        content: "";
+        display: table;
+        clear: both;
     }
 
     /* Footer */
