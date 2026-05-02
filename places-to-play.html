@@ -967,4 +967,40 @@
             applyFilters();
         });
     </script>
+
+    <!-- JavaScript for Keyboard Dropdown Navigation-->
+    <script>
+        // SPACE opens the dropdown
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('keydown', (e) => {
+                if (e.key === ' ' || e.key === 'Spacebar') {
+                    e.preventDefault();
+                    btn.click();
+                }
+            });
+        });
+
+        // Keep dropdown open when tabbing into checkboxes
+        document.querySelectorAll('.filter-menu input').forEach(input => {
+            input.addEventListener('focus', () => {
+                input.closest('.filter-dropdown').classList.add('open');
+            });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            document.querySelectorAll('.filter-dropdown').forEach(drop => {
+                if (!drop.contains(e.target)) {
+                    drop.classList.remove('open');
+                }
+            });
+        });
+
+        // Toggle dropdown on click
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.parentElement.classList.toggle('open');
+            });
+        });
+    </script>
 </body>

@@ -614,6 +614,14 @@ body {
     margin-bottom: 0.3em;
 }
 
+.filter-dropdown .filter-menu {
+    display: none;
+}
+
+.filter-dropdown.open .filter-menu {
+    display: block;
+}
+
 .reset-btn {
     padding: 0.5em 1em;
     margin-top: 2em;
