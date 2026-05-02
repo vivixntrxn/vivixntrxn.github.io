@@ -14,14 +14,14 @@
         <!-- Header -->
         <header class="header">
             <div class="header-content">
-                <div class="left-group">
+                <a href="index.html" class="left-group home-link">
                     <img src="media-home/logo.png" alt="Pickleball Hub Logo" class="logo">
 
                     <div class="title-group">
                         <h1>Pickleball Hub</h1>
                         <p class="tagline">Your beginner's guide</p>
                     </div>
-                </div>
+                </a>
 
                 <button class="menu-toggle">
                     <img src="media-home/bars-solid.png" alt="Menu Bar">
@@ -41,7 +41,7 @@
         </header>
 
         <!-- Hero Section -->
-        <section class="hero-wrapper fundamentals-hero">
+        <section class="places-section">
             <div class="hero">
                 <h2>Places to Play</h2>
                 <p class="description">
@@ -51,8 +51,43 @@
             </div>
         </section>
 
+        <!-- Filtering -->
+        <div class="filters-container">
+            <div class="filter-dropdown">
+                <button class="filter-btn">Filter by Location ▾</button>
+                <div class="filter-menu">
+                    <label><input type="checkbox" class="filter-city" value="Apache Junction"> Apache Junction</label>
+                    <label><input type="checkbox" class="filter-city" value="Avondale"> Avondale</label>
+                    <label><input type="checkbox" class="filter-city" value="Chandler"> Chandler</label>
+                    <label><input type="checkbox" class="filter-city" value="Fountain Hills"> Fountain Hills</label>
+                    <label><input type="checkbox" class="filter-city" value="Gilbert"> Gilbert</label>
+                    <label><input type="checkbox" class="filter-city" value="Glendale"> Glendale</label>
+                    <label><input type="checkbox" class="filter-city" value="Goodyear"> Goodyear</label>
+                    <label><input type="checkbox" class="filter-city" value="Mesa"> Mesa</label>
+                    <label><input type="checkbox" class="filter-city" value="Peoria"> Peoria</label>
+                    <label><input type="checkbox" class="filter-city" value="Phoenix"> Phoenix</label>
+                    <label><input type="checkbox" class="filter-city" value="Queen Creek"> Queen Creek</label>
+                    <label><input type="checkbox" class="filter-city" value="Scottsdale"> Scottsdale</label>
+                    <label><input type="checkbox" class="filter-city" value="Surprise"> Surprise</label>
+                    <label><input type="checkbox" class="filter-city" value="Tempe"> Tempe</label>
+                    <label><input type="checkbox" class="filter-city" value="Wickenburg"> Wickenburg</label>
+                </div>
+            </div>
+
+            <div class="filter-dropdown">
+                <button class="filter-btn">Filter by Type ▾</button>
+                <div class="filter-menu">
+                    <label><input type="checkbox" class="filter-type" value="free"> FREE Courts</label>
+                    <label><input type="checkbox" class="filter-type" value="indoor"> Indoor Courts</label>
+                    <label><input type="checkbox" class="filter-type" value="outdoor"> Outdoor Courts</label>
+                </div>
+            </div>
+
+            <button id="resetFilters" class="reset-btn">Reset Filters</button>
+        </div>
+
         <!-- Apache Junction -->
-        <section class="location">
+        <section class="location has-outdoor" data-city="Apache Junction">
             <h2>Apache Junction</h2>
 
             <div class="indoor">
@@ -62,7 +97,7 @@
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Prospector Park</h4>
                     <p>4 Courts · FREE</p>
                     <p>3015 N Idaho Rd</p>
@@ -71,7 +106,7 @@
         </section>
 
         <!-- Avondale -->
-        <section class="location">
+        <section class="location has-outdoor" data-city="Avondale">
             <h2>Avondale</h2>
 
             <div class="indoor">
@@ -81,19 +116,19 @@
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Alamar Park</h4>
                     <p>4 Courts · FREE</p>
                     <p>4155 S El Mirage Rd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Festival Fields Park</h4>
                     <p>4 Courts · FREE</p>
                     <p>101 E Lower Buckeye Rd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Friendship Park</h4>
                     <p>8 Courts · FREE</p>
                     <p>12325 W McDowell Rd</p>
@@ -102,7 +137,7 @@
         </section>
 
         <!-- Chandler -->
-        <section class="location">
+        <section class="location has-indoor has-outdoor" data-city="Chandler">
             <h2>Chandler</h2>
 
             <div class="indoor">
@@ -117,19 +152,19 @@
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Arbuckle Park</h4>
                     <p>1 Court · FREE</p>
                     <p>1100 S Norman Way</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Arrowhead Meaadows Park</h4>
                     <p>6 Courts · FREE</p>
                     <p>1475 W Erie St</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Tumbleweed Park</h4>
                     <p>18 Courts · FREE</p>
                     <p>2041 S Pioneer Pkwy</p>
@@ -138,7 +173,7 @@
         </section>
 
         <!-- Fountain Hills -->
-        <section class="location">
+        <section class="location has-outdoor" data-city="Fountain Hills">
             <h2>Fountain Hills</h2>
 
             <div class="indoor">
@@ -148,7 +183,7 @@
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Boys & Girls Club</h4>
                     <p>3 Courts · FREE</p>
                     <p>14605 N Del Cambre Ave</p>
@@ -166,7 +201,7 @@
                     <p>16100 E Palisades Blvd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Four Peaks Park</h4>
                     <p>6 Courts · FREE</p>
                     <p>14789 N Del Cambre Ave</p>
@@ -175,7 +210,7 @@
         </section>
 
         <!-- Gilbert -->
-        <section class="location">
+        <section class="location has-indoor has-outdoor" data-city="Gilbert">
             <h2>Gilbert</h2>
 
             <div class="indoor">
@@ -209,7 +244,7 @@
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Gilbert Regional Park</h4>
                     <p>16 Courts · FREE</p>
                     <p>3005 E Queen Creek Rd</p>
@@ -218,7 +253,7 @@
         </section>
 
         <!-- Glendale -->
-        <section class="location">
+        <section class="location has-indoor has-outdoor" data-city="Glendale">
             <h2>Glendale</h2>
 
             <div class="indoor">
@@ -246,7 +281,7 @@
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Bonsall Park North</h4>
                     <p>8 Courts · FREE</p>
                     <p>58th Ave & Bethany Home Rd</p>
@@ -258,7 +293,7 @@
                     <p>9330 W Hanna Ln</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Foothills Park</h4>
                     <p>2 Courts · FREE</p>
                     <p>5728 W Villa Theresa Dr</p>
@@ -273,7 +308,7 @@
         </section>
 
         <!-- Goodyear -->
-        <section class="location">
+        <section class="location has-indoor has-outdoor" data-city="Goodyear">
             <h2>Goodyear</h2>
 
             <div class="indoor">
@@ -289,13 +324,13 @@
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Goodyear Community Park</h4>
                     <p>4 Courts · FREE</p>
                     <p>3075 N Litchfield Rd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Goodyear Recreational Park</h4>
                     <p>6 Courts · FREE</p>
                     <p>420 S Estrella Pkwy</p>
@@ -304,7 +339,7 @@
         </section>
 
         <!-- Mesa -->
-        <section class="location">
+        <section class="location has-indoor has-outdoor" data-city="Mesa">
             <h2>Mesa</h2>
 
             <div class="indoor">
@@ -338,7 +373,7 @@
                     <p>6321 S Ellsworth Rd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Christopher J. Brady Park</h4>
                     <p>4 Courts · FREE</p>
                     <p>7045 E Monterey Ave</p>
@@ -350,7 +385,7 @@
                     <p>1017 N Dobson Rd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Kleinman Park</h4>
                     <p>4 Courts · FREE</p>
                     <p>710 S Extension Rd</p>
@@ -362,7 +397,7 @@
                     <p>4125 E McKellips Rd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Monterey Park</h4>
                     <p>4 Courts · FREE</p>
                     <p>7045 E Monterey Ave</p>
@@ -374,7 +409,7 @@
                     <p>6425 E Tenton Cir</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>The Courts at Eastmark</h4>
                     <p>8 Courts · FREE</p>
                     <p>10531 E Rubidium Ave</p>
@@ -383,7 +418,7 @@
         </section>
 
         <!-- Peoria -->
-        <section class="location">
+        <section class="location has-indoor has-outdoor" data-city="Peoria">
             <h2>Peoria</h2>
 
             <div class="indoor">
@@ -411,31 +446,31 @@
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Deer Village Park</h4>
                     <p>2 Courts · FREE</p>
                     <p>21217 N 88th Ln</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Paloma Community Park</h4>
                     <p>16 Courts · FREE</p>
                     <p>29799 N Lake Pleasant Pkwy</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Purple Park Pickleball</h4>
                     <p>2 Courts · FREE</p>
                     <p>10631 W Williams Rd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Sundance Park Pickleball Courts</h4>
                     <p>2 Courts · FREE</p>
                     <p>11091 N 71st Ave</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Windrose Park</h4>
                     <p>2 Courts · FREE</p>
                     <p>12859 N 83rd Ln</p>
@@ -444,7 +479,7 @@
         </section>
 
         <!-- Phoenix -->
-        <section class="location">
+        <section class="location has-indoor has-outdoor" data-city="Phoenix">
             <h2>Phoenix</h2>
 
             <div class="indoor">
@@ -466,79 +501,79 @@
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Casita Court</h4>
                     <p>1 Court · FREE · appointment only</p>
                     <p>11222 S Mandan St</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Deem Hills Community Park</h4>
                     <p>4 Courts · FREE</p>
                     <p>26606 N Deem Hills Pkwy</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Encancto Park Tennis Center</h4>
                     <p>3 Courts · FREE</p>
                     <p>2121 N 15th Ave</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>G.R. Herberger Park</h4>
                     <p>4 Courts · FREE</p>
                     <p>5820 E Indian School Rd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Jesus Church Pickleball Club</h4>
                     <p>3 Courts · FREE</p>
                     <p>2929 W Greenway Rd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Liberty Park</h4>
                     <p>2 Courts · FREE</p>
                     <p>9700 W Williams Rd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Paseo Highlands Pickleball Complex</h4>
                     <p>6 Courts · FREE</p>
                     <p>3435 W Pinnacle Peak Rd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Pecos Park</h4>
                     <p>16 Courts · FREE</p>
                     <p>17010 S 48th St</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Roadrunner Park</h4>
                     <p>4 Courts · FREE</p>
                     <p>3502 E Cactus Rd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Rose Mofford Sports Complex</h4>
                     <p>3 Courts · FREE</p>
                     <p>9833 N 25th Ave</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Sandpiper Park</h4>
                     <p>4 Courts · FREE</p>
                     <p>6530 E Hearn Rd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Telephone Pioneers of America Park</h4>
                     <p>4 Courts · FREE</p>
                     <p>1946 W Morningside Dr</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Western Star Park</h4>
                     <p>2 Courts · FREE</p>
                     <p>4425 E Western Star Blvd</p>
@@ -547,7 +582,7 @@
         </section>
 
         <!-- Queen Creek -->
-        <section class="location">
+        <section class="location has-outdoor" data-city="Queen Creek">
             <h2>Queen Creek</h2>
 
             <div class="indoor">
@@ -557,13 +592,13 @@
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Frontier Family Park</h4>
                     <p>24 Courts · FREE</p>
                     <p>20039 S 220th St</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Mansel Carter Oasis Park</h4>
                     <p>4 Courts · FREE</p>
                     <p>19535 E Appleby Rd</p>
@@ -572,7 +607,7 @@
         </section>
 
         <!-- Scottsdale -->
-        <section class="location">
+        <section class="location has-indoor has-outdoor" data-city="Scottsdale">
             <h2>Scottsdale</h2>
 
             <div class="indoor">
@@ -606,13 +641,13 @@
                     <p>8246 E San Salvador Dr</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Ashler Hills Park</h4>
                     <p>8 Courts · FREE</p>
                     <p>32220 N 74th Way</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Cholla Park</h4>
                     <p>8 Courts · FREE</p>
                     <p>11320 E Via Linda</p>
@@ -630,13 +665,13 @@
                     <p>7477 E Doubletree Ranch Rd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Horizon Park</h4>
                     <p>10 Courts · FREE</p>
                     <p>15444 N 100th St</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Paiute Park</h4>
                     <p>4 Courts · FREE</p>
                     <p>3210 N 66th St</p>
@@ -654,7 +689,7 @@
                     <p>37100 N Mirabel Club Dr</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Thompson Peak Park</h4>
                     <p>3 Courts · FREE</p>
                     <p>20199 N 78th Pl</p>
@@ -675,7 +710,7 @@
         </section>
 
         <!-- Surprise -->
-        <section class="location">
+        <section class="location has-outdoor" data-city="Surprise">
             <h2>Surprise</h2>
 
             <div class="indoor">
@@ -691,7 +726,7 @@
                     <p>11440 N Greenwich Blvd</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Surprise Community Park Pickleball Courts</h4>
                     <p>16 Courts · FREE</p>
                     <p>15930 N Bullard Ave</p>
@@ -700,7 +735,7 @@
         </section>
 
         <!-- Tempe -->
-        <section class="location">
+        <section class="location has-indoor has-outdoor" data-city="Tempe">
             <h2>Tempe</h2>
 
             <div class="indoor">
@@ -728,7 +763,7 @@
                     <p>1616 W Ruby Dr</p>
                 </div>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Tempe Sports Complex</h4>
                     <p>16 Courts · FREE</p>
                     <p>8401 S Hardy Dr</p>
@@ -737,7 +772,7 @@
         </section>
 
         <!-- Wickenburg -->
-        <section class="location">
+        <section class="location has-outdoor" data-city="Wickenburg">
             <h2>Wickenburg</h2>
 
             <div class="indoor">
@@ -747,7 +782,7 @@
             <div class="outdoor">
                 <h3>Outdoor Courts</h3>
 
-                <div class="location-card">
+                <div class="location-card free">
                     <h4>Sunset Park</h4>
                     <p>10 Courts · FREE</p>
                     <p>3020 W Wickenburg Way</p>
@@ -772,7 +807,8 @@
                     <a href="feedback.html" class="feedback-extra">Feedback Form</a>
 
                     <p class="footer-contact">
-                        Contact Us: <span>VivianTran@pickleballhub.com</span>
+                        Contact Us: 
+                        <a href="mailto:VivianTran@pickleballhub.com">VivianTran@pickleballhub.com</a>
                     </p>
                 </div>
             </div>
@@ -805,6 +841,126 @@
             if (item.getAttribute('href') === currentPage) {
                 item.classList.add('active');
             }
+        });
+    </script>
+
+    <!-- JavaScript for Filtering Dropdowns -->
+    <script>
+        function applyFilters() {
+            const selectedCities = [...document.querySelectorAll(".filter-city:checked")].map(cb => cb.value);
+            const selectedTypes = [...document.querySelectorAll(".filter-type:checked")].map(cb => cb.value);
+            const sections = document.querySelectorAll("section.location");
+
+            const indoorSelected = selectedTypes.includes("indoor");
+            const outdoorSelected = selectedTypes.includes("outdoor");
+            const freeSelected = selectedTypes.includes("free");
+
+            sections.forEach(section => {
+                const city = section.dataset.city;
+                const hasIndoor = section.classList.contains("has-indoor");
+                const hasOutdoor = section.classList.contains("has-outdoor");
+                const hasFree = section.querySelector(".location-card.free") !== null;
+
+                let showSection = true;
+
+                // Filter by Location
+                if (selectedCities.length > 0 && !selectedCities.includes(city)) {
+                    showSection = false;
+                }
+
+                // Filter by Type
+                if (indoorSelected && !outdoorSelected && !hasIndoor) showSection = false;
+                if (outdoorSelected && !indoorSelected && !hasOutdoor) showSection = false;
+                if (freeSelected && !hasFree) showSection = false;
+
+                if (!showSection) {
+                    section.style.display = "none";
+                    return;
+                }
+
+                section.style.display = "block";
+
+                const indoorBlock = section.querySelector(".indoor");
+                const outdoorBlock = section.querySelector(".outdoor");
+
+                // Determine which blocks to show
+                let showIndoorBlock = false;
+                let showOutdoorBlock = false;
+
+                if (indoorSelected && !outdoorSelected) {
+                    showIndoorBlock = true;
+                    showOutdoorBlock = false;
+                } 
+                else if (outdoorSelected && !indoorSelected) {
+                    showIndoorBlock = false;
+                    showOutdoorBlock = true;
+                } 
+                else {
+                    showIndoorBlock = hasIndoor;
+                    showOutdoorBlock = hasOutdoor;
+                }
+
+                // Filter cards inside block
+                function filterBlock(block, showBlock) {
+                    if (!block) return 0;
+
+                    if (!showBlock) {
+                        block.style.display = "none";
+                        return 0;
+                    }
+
+                    block.style.display = "block";
+                    const cards = block.querySelectorAll(".location-card");
+                    let visibleCount = 0;
+
+                    cards.forEach(card => {
+                        const isFree = card.classList.contains("free");
+
+                        if (freeSelected) {
+                            if (isFree) {
+                                card.style.display = "block";
+                                visibleCount++;
+                            } else {
+                                card.style.display = "none";
+                            }
+                        } else {
+                            card.style.display = "block";
+                            visibleCount++;
+                        }
+                    });
+
+                    // Hide block if no visible cards
+                    if (visibleCount === 0) {
+                        block.style.display = "none";
+                    }
+
+                    return visibleCount;
+                }
+
+                const indoorVisible = filterBlock(indoorBlock, showIndoorBlock);
+                const outdoorVisible = filterBlock(outdoorBlock, showOutdoorBlock);
+
+                // Hide section if both blocks are empty
+                const hasAnyVisibleCards =
+                    (showIndoorBlock && indoorVisible > 0) || (showOutdoorBlock && outdoorVisible > 0);
+
+                if (!hasAnyVisibleCards) {
+                    section.style.display = "none";
+                }
+            });
+        }
+
+        document.querySelectorAll(".filter-city, .filter-type").forEach(cb => {
+            cb.addEventListener("change", applyFilters);
+        });
+    </script>
+
+    <!-- JavaScript for Reset Button -->
+    <script>
+        document.getElementById("resetFilters").addEventListener("click", () => {
+            document.querySelectorAll(".filter-city").forEach(cb => cb.checked = false);
+            document.querySelectorAll(".filter-type").forEach(cb => cb.checked = false);
+            applyFilters();
         });
     </script>
 </body>
