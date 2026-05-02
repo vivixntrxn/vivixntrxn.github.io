@@ -134,7 +134,7 @@ body {
 }
 
 .hero h2 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-top: 0;
 }
 
@@ -200,7 +200,7 @@ body {
 
 /* Learn Section */
 .learn-title {
-    padding: 0 0.7em;
+    padding: 0em 0.7em;
 }
 
 .learn-section {
@@ -669,8 +669,14 @@ form label {
     margin-bottom: 0.2em;
 }
 
+form select {
+    height: 1.7em;
+}
+
 form input, form textarea, form select {
+    line-height: 1.2;
     margin-bottom: 1em;
+    box-sizing: border-box;
 }
 
 input[type="submit"] {
@@ -847,6 +853,32 @@ input[type="submit"]:hover {
     /* Balls Section */
     .ball-price-col {
         display: table-cell;
+    }
+
+    /* Feedback Form */
+    #feedback-form {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 1em;
+        align-items: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    #feedback-form label {
+        text-align: right;
+        margin-bottom: 0;
+    }
+    
+    #feedback-form input, #feedback-form select, #feedback-form textarea {
+        width: 100%;
+        margin-bottom: 0;
+    }
+        
+    #feedback-form input[type="submit"] {
+        grid-column: 2;
+        max-width: 200px;
+        justify-self: end;
     }
 }
 
