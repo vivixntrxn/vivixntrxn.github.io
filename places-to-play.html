@@ -950,6 +950,7 @@
             });
         }
 
+        document.addEventListener("DOMContentLoaded", applyFilters);
         document.querySelectorAll(".filter-city, .filter-type").forEach(cb => {
             cb.addEventListener("change", applyFilters);
         });
