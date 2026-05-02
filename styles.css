@@ -476,13 +476,6 @@ body {
     font-size: 1.1em;
     margin-bottom: 0.3em;
 }
-
-.paddle-card .paddle-options, .find-tagline {
-    color: var(--ocean-blue);
-    font-size: 0.9em;
-    margin-top: -0.3em;
-}
-
 .paddle-bullets {
     padding-left: 1.5em;
 }
@@ -500,12 +493,22 @@ body {
 }
 
 /* Paddles 2 Section */
+.approved-link a {
+    color: #004A7C;
+}
+
 .paddle-link-card, .recommendation-link-card {
     background-color: var(--emerald);
     border-radius: 10px;
     border: 1px solid var(--shadow-grey);
     margin: 0.6em 0;
     transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.find-tagline {
+    color: #004A7C;
+    font-size: 0.9em;
+    margin-top: -0.3em;
 }
 
 .paddle-link, .balls-link {
@@ -545,13 +548,13 @@ body {
 }
 
 .paddle-link-card:hover, .recommendation-link-card:hover {
-    background-color: lightgrey;
+    background-color: var(--ocean-blue);
     transform: scale(1.03);
 }
 
 /* Balls Selection */
 .ball-link {
-    color: var(--ocean-blue)
+    color: #004A7C;
 }
 
 .ball-price-col, .ball-status-col {
@@ -736,6 +739,24 @@ input[type="submit"]:hover {
     /* Scoring Section */
     .score-number {
         font-size: 1.5em;
+    }
+
+    /* Paddles Section */
+    .find-card h3 {
+        font-size: 0.95em;
+    }
+
+    .find-tagline {
+        font-size: 0.75em;
+    }
+
+    .paddle-title, .paddle-name, .paddle-price, .balls-title, .balls-name, .balls-price {
+        font-size: 0.7em;
+    }
+
+    /* Balls Section */
+    .balls-table th, .balls-table td {
+        font-size: 0.8em;
     }
 }
 
