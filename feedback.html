@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Share your feedback about Pickleball Hub. Contact us with questions, comments, or suggestions.">
 
     <title>Pickleball Hub :: Feedback</title>
     <link rel="stylesheet" href="styles.css">
@@ -40,55 +41,57 @@
             </nav>
         </header>
 
-        <!-- Hero Section -->
-        <section class="information-section">
-            <div class="hero">
-                <h2>Feedback Form</h2>
-                <p class="description">
-                    We'd love to hear from you!<br>
-                    Required fields are marked with an asterisk *
-                </p>
-            </div>
-        </section>
+        <main>
+            <!-- Hero Section -->
+            <section class="information-section">
+                <div class="hero">
+                    <h2>Feedback Form</h2>
+                    <p class="description">
+                        We'd love to hear from you!<br>
+                        Required fields are marked with an asterisk *
+                    </p>
+                </div>
+            </section>
 
-        <!-- Feedback Form -->
-        <form id="feedback-form">
-            <label for="firstName">*First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
+            <!-- Feedback Form -->
+            <form id="feedback-form">
+                <label for="firstName">*First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
 
-            <label for="lastName">*Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
+                <label for="lastName">*Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
 
-            <label for="email">*Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">*Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" pattern="\d{10}" title="Enter a 10-digit phone number (numbers only)">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="\d{10}" title="Enter a 10-digit phone number (numbers only)">
 
-            <label for="experience">*Experience:</label>
-            <select id="experience" name="experience" required>
-                <option value="" disabled selected></option>
-                <option value="Beginner">Beginner</option>
-                <option value="Casual Player">Casual Player</option>
-                <option value="Competitive Player">Competitive Player</option>
-            </select>
+                <label for="experience">*Experience:</label>
+                <select id="experience" name="experience" required>
+                    <option value="" disabled selected></option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Casual Player">Casual Player</option>
+                    <option value="Competitive Player">Competitive Player</option>
+                </select>
 
-            <label for="frequency">How often do you play?</label>
-            <select id="frequency" name="frequency">
-                <option value="" disabled selected></option>
-                <option value="Several times a week">Several times a week</option>
-                <option value="Once a week">Once a week</option>
-                <option value="Once a month">Once a month</option>
-                <option value="Rarely">Rarely</option>
-            </select>
+                <label for="frequency">How often do you play?</label>
+                <select id="frequency" name="frequency">
+                    <option value="" disabled selected></option>
+                    <option value="Several times a week">Several times a week</option>
+                    <option value="Once a week">Once a week</option>
+                    <option value="Once a month">Once a month</option>
+                    <option value="Rarely">Rarely</option>
+                </select>
 
-            <label for="comments">*Questions/Comments:</label>
-            <textarea id="comments" name="comments" rows="8" required></textarea>
+                <label for="comments">*Questions/Comments:</label>
+                <textarea id="comments" name="comments" rows="8" required></textarea>
 
-            <input type="submit" value="Submit">
-        </form>
+                <input type="submit" value="Submit">
+            </form>
 
-        <div id="form-message" class="hidden"></div>
+            <div id="form-message" class="hidden"></div>
+        </main>
 
         <!-- Footer -->
         <footer class="footer">

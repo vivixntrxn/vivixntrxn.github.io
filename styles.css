@@ -589,9 +589,8 @@ body {
 .filter-btn {
     padding: 0.5em 1em;
     margin-top: 2em;
-    background: var(--ocean-blue);
-    color: white;
-    border: none;
+    background: #E3E3E3;
+    color: var(--shadow-grey);
     border-radius: 6px;
     cursor: pointer;
 }
@@ -600,7 +599,7 @@ body {
     display: none;
     position: absolute;
     background: white;
-    border: 1px solid #ccc;
+    border: 1px solid var(--shadow-grey);
     padding: 0.5em;
     border-radius: 6px;
     z-index: 10;
@@ -618,9 +617,8 @@ body {
 .reset-btn {
     padding: 0.5em 1em;
     margin-top: 2em;
-    background: var(--green);
-    color: white;
-    border: none;
+    background: var(--emerald);
+    color: var(--shadow-grey);
     border-radius: 6px;
     cursor: pointer;
 }
@@ -683,6 +681,7 @@ input[type="submit"] {
     padding: 0.6em 1.2em;
     border-radius: 8px;
     cursor: pointer;
+    background-color: #E3E3E3; 
 }
 
 input[type="submit"]:hover {
